@@ -3,7 +3,7 @@ import React from 'react';
 
 import './Navbar.css';
 
-export const Navbar = () => {
+const Navbar = () => {
     return (
         <div className="navbar">
             <div className="text">Where in the world?</div>
@@ -16,3 +16,5 @@ export const Navbar = () => {
         </div>
     )
 }
+
+export default Navbar;
