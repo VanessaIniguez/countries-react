@@ -1,23 +1,23 @@
 import React from 'react';
 import './Countrie.css';
 
-const Countrie = () => {
+const Countrie = ({countrie}) => {
     return (
         <div className="card-container">
             <div className="card-image">
-                <img src="https://restcountries.eu/data/deu.svg" alt=""/>
+                <img src={countrie.flag} alt=""/>
             </div>
             <div className="card-text">
-                <h4>Germany</h4>
+                <h4>{countrie.name}</h4>
                 <div className="card-description">
                     <p>
-                        Population: <span>81,700.900</span>
+                        Population: <span>{countrie.popularion}</span>
                     </p>
                     <p>
-                        Region: <span>Europe</span>
+                        Region: <span>{countrie.region}</span>
                     </p>
                     <p>
-                        Capital: <span>Berlin</span>
+                        Capital: <span>{countrie.capital}</span>
                     </p>
                 </div>
             </div>

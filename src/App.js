@@ -10,7 +10,7 @@ function App() {
       <Navbar />
 
       <div className="main-container">
-        <Filter />
+        
 
         <Countries />
       </div>
